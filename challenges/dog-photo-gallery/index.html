@@ -21,12 +21,10 @@
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="card bg-info text-white mt-5 p-5">
-                    <button class="btn btn-primary p-2 firstBtn ">Please click button to retrieve data</button>
+                    <button class="btn btn-primary p-2 firstBtn ">Please click button to view random dog pictures.</button>
                 </div>
                 <div class="card-body">
-                    <ul class="unorderedList">
-                        <!-- <li style="text-decoration: none;"><img class="picture" alt="animal"></li> -->
-                    </ul>
+                    <ul class="unorderedList"></ul>
                 </div>
             </div>
         </div>
@@ -64,9 +62,9 @@
                 cardBody.style.display = 'block'
                 image.src = data.message;
                 image.style.height = "50%";
-                image.style.width = "100%";
+                image.style.width = "80%";
                 listElement.append(image);
-                unorderedList.append(listElement);
+                unorderedList.appendChild(listElement);
             }
     </script>
 </body>
